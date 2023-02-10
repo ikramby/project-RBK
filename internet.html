@@ -1,0 +1,66 @@
+<!Doctype Html>  
+<Html>     
+<Head>   
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="internet.css" /> 
+    
+<title id="titre">   
+    Internet
+</title>  
+ 
+
+
+</Head>  
+<Body>  
+ <main>   
+        <h1>
+    Resolve Internet problem
+        </h1> 
+
+        <h2>  <input type="radio" id="radio1" name="group1" value="Oreedo">
+<label for="radio1">Oreedo</label>
+<br>
+<input type="radio" id="radio2" name="group1" value="Orange">
+<label for="radio2">Orange</label>
+<br>
+<input type="radio" id="radio3" name="group1" value="Global">
+<label for="radio3">Global Net</label>
+<br>
+       
+<button onclick="checkRadioButton()">Alert!</button>
+</h2>     
+
+</br>
+<script>
+
+  function checkRadioButton() {
+    var radio1 = document.getElementById("radio1");
+    var radio2 = document.getElementById("radio2");
+    if (radio1.checked) {
+      window.location.href="https://www.ooredoo.tn/Personal/en/contact-us";
+    } else if (radio2.checked) {
+      window.location.href="https://www.orange.tn/assistance";
+    }
+     else if (radio3.checked){
+      window.location.href="https://www.gnet.tn/contact/";
+    }
+   else {
+    alert("No option is selected");
+  }
+  }
+  
+  
+
+
+
+
+
+</script>
+
+
+</main> 
+</Body>  
+</Html>

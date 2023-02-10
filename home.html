@@ -1,0 +1,84 @@
+<!Doctype Html>  
+<Html>     
+<Head>   
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    
+<title id="titre">   
+    hello guys!
+</title>  
+ 
+
+
+</Head>  
+<Body>  
+ <main>   
+        <h1>
+          <label id="titre">Working Space</label>
+        </h1> 
+       
+        <h3>
+        
+  <label >Name :</label>
+  <input type="text" id="text_input"> </h3>
+  
+  <br>  
+  <h3>
+
+  <label >Post :</label>
+  
+  <select id="post" >
+    <option value="valeur1" selected>Lecture Space</option>
+    <option value="valeur2" >Join Your Pair</option>
+    <option value="valeur3">Technical Problem</option>
+    <option value="valeur4">Internet connection Problem</option>
+  </select>
+</br>
+</h3>
+<br>
+ <p id="display_content"></p>
+ 
+  <button>Let's start</button>
+
+
+<script>
+//<button id="submit_button">Say Hello</button>
+  // document.getElementById("submit_button").addEventListener("click", function() {
+  //    var textBox = document.getElementById("text_input");
+  //    var content = textBox.value;
+  //    document.getElementById("display_content").innerHTML = content;
+  //  });
+  var btn=document.querySelector('button');
+
+
+  btn.addEventListener('click', function() { 
+    if (document.querySelector('select').value==='valeur1')
+    {
+      window.location.href="https://canvas.instructure.com/courses/5643198";
+     }
+      else if(document.querySelector('select').value==='valeur2')
+      {
+      window.location.href="https://discord.com/channels/1040254423831695360/1040254424892850179";
+      }
+      else if(document.querySelector('select').value==='valeur3')
+      { 
+        window.location.href="technicalpb.html";
+      }
+      else if(document.querySelector('select').value==='valeur4')
+      { 
+        window.location.href="internet.html";
+      }
+  });
+
+
+
+
+</script>
+
+
+</main> 
+</Body>  
+</Html>
